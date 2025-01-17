@@ -1,0 +1,18 @@
+/* CSS Animations - Start
+================================================== */
+.fadeinout {
+	animation: fadeInOut 4s infinite;
+}
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* CSS Animations - End
+================================================== */

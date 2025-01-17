@@ -1,0 +1,21 @@
+/* Social Block - Start
+================================================== */
+.social_block {
+	gap: 26px;
+	a {
+		display: flex;
+		font-size: 22px;
+		fill: var(--bs-dark);
+		color: var(--bs-dark);
+		svg {
+			width: 20px;
+			height: auto;
+		}
+		&:hover {
+			fill: var(#fff);
+			color: var(#fff);
+		}
+	}
+}
+/* Social Block - End
+================================================== */

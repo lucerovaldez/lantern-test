@@ -1,0 +1,231 @@
+/* Template Reset - Start
+================================================== */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: var(--bs-body-font-size);
+	font-weight: var(--bs-body-font-weight);
+	line-height: var(--bs-body-line-height);
+	font-style: normal;
+	font-optical-sizing: auto;
+	color: rgba(var(--bs-body-color-rgb), 0.8);
+	font-family: var(--bs-body-font-family);
+	background-color: var(--bs-body-bg);
+	text-rendering: optimizelegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.page_wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.shape_light_1 {
+	left: 0;
+	right: 0;
+	z-index: -2;
+	bottom: -280px;
+	position: absolute;
+	text-align: center;
+	animation: fadeInOut 3s infinite;
+}
+.shape_light_2 {
+	z-index: -1;
+	left: -150px;
+	top: -1000px;
+	width: 2000px;
+	position: absolute;
+	animation: fadeInOut 3s infinite;
+}
+.shape_light_3 {
+	z-index: -2;
+	left: -240px;
+	bottom: -280px;
+	position: absolute;
+	animation: fadeInOut 3s infinite;
+}
+.shape_light_4 {
+	top: -22%;
+	left: -85%;
+	z-index: -1;
+	position: absolute;
+	animation: fadeInOut 3s infinite;
+}
+.service_shape {
+	display: none;
+	.page-service & {
+		display: block;
+	}
+}
+iframe {
+	border: none;
+}
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+	height: auto;
+	max-width: 100%;
+}
+img {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	user-select: none;
+	vertical-align: middle;
+}
+
+a {
+	outline: 0;
+	display: inline-block;
+	text-decoration: none;
+	color: var(--bs-heading-color);
+	transition: var(--bs-transition);
+	font-family: var(--bs-body-font-family);
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		outline: 0;
+		text-decoration: none;
+	}
+}
+
+button {
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+	display: inline-block;
+	color: var(--bs-heading-color);
+	transition: var(--bs-transition);
+	font-family: var(--bs-body-font-family);
+	&:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	color: var(--bs-heading-color);
+	font-family: var(--bs-heading-font-family);
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+p {
+	strong {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+hr {
+	opacity: 1;
+	height: 1px;
+	border: none;
+	margin: 38px 0;
+	background-color: rgba(var(--bs-border-color), 0.1);
+}
+
+mark {
+	padding: 0;
+	font-weight: 700;
+	color: var(--bs-primary);
+	background-color: transparent;
+}
+
+.container {
+	max-width: 1230px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container-fluid {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.row {
+	margin: -12px;
+}
+[class*="col-"] {
+	padding: 12px;
+}
+
+.boxed_wrapper {
+	padding: 100px;
+	position: relative;
+}
+
+.dropdown-menu {
+	border: none;
+	padding: 6px 0;
+	margin-top: 16px;
+	border-radius: 6px;
+	background-color: var(--bs-white);
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+	animation: 0.2s ease-in-out 0s normal none 1 running fadeIn;
+	&:before {
+		left: 0;
+		right: 0;
+		top: -16px;
+		content: '';
+		height: 16px;
+		display: block;
+		position: absolute;
+	}
+	>li {
+		padding: 0 6px;
+		&:not(:last-child) {
+			margin-bottom: 1px;
+		}
+		>.dropdown-item {
+			display: block;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 20px;
+			padding: 12px 16px;
+			position: relative;
+			border-radius: 4px;
+			white-space: nowrap;
+			color: var(--bs-dark);
+		}
+		&.active,
+		&:hover {
+			>.dropdown-item {
+				color: var(--bs-white);
+				background-color: var(--bs-primary);
+			}
+		}
+	}
+}
+
+// Section Decoration - Start
+.section_decoration {
+	z-index: 1;
+	position: relative;
+	.decoration_item {
+		z-index: -1;
+		position: absolute;
+	}
+}
+// Section Decoration - End
+
+/* Template Reset - End
+================================================== */

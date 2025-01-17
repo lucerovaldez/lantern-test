@@ -1,0 +1,29 @@
+/* Backtotop Button - Start
+================================================== */
+.backtotop {
+  left: 50%;
+  top: -42px;
+  z-index: 999;
+  position: absolute;
+  transform: translateX(-50%);
+  .scroll {
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    position: relative;
+    align-items: center;
+    border-radius: 100%;
+    display: inline-flex;
+    color: var(--bs-dark);
+    justify-content: center;
+    border: 5px solid var(--bs-dark);
+    background-color: var(--bs-white);
+    &:hover {
+      color: var(--bs-white);
+      background-color: var(--bs-primary);
+    }
+  }
+}
+/* Backtotop Button - End
+================================================== */

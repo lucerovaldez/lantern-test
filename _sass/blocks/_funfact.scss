@@ -1,0 +1,39 @@
+/* Funfact Block - Start
+================================================== */
+.funfact_block {
+	padding: 40px;
+	backdrop-filter: blur(16px);
+	transition: var(--bs-transition);
+	border-radius: var(--bs-border-radius);
+	background-color: rgba(var(--bs-border-color), 0.1);
+	border: 1px solid rgba(var(--bs-border-color), 0.1);
+	&:hover {
+		border-color: rgba(var(--bs-border-color), 0.3);
+	}
+	.funfact_icon {
+		height: 80px;
+		margin-bottom: 53px;
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: center;
+		img {
+			width: auto;
+			height: 100%;
+		}
+	}
+	.counter_value {
+		line-height: 1;
+		font-size: 64px;
+		color: var(--bs-heading-color);
+		font-family: var(--bs-heading-font-family);
+	}
+	.funfact_title {
+		font-size: 24px;
+		margin: 21px 0 12px;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+/* Funfact Block - End
+================================================== */

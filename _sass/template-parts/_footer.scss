@@ -1,0 +1,30 @@
+/* Site Footer - Start
+================================================== */
+.site_footer {
+	.site_logo .site_link {
+		width: 220px;
+	}
+	hr {
+		margin: 80px 0 44px;
+	}
+	.boxed_wrapper {
+		border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+	}
+	.iconlist_block {
+		&.unordered_list {
+			gap: 10px 46px;
+		}
+		>li {
+			font-weight: 500;
+		}
+	}
+}
+.copyright_text {
+	font-size: 16px;
+	a {
+		color: var(--bs-primary);
+		text-decoration: underline;
+	}
+}
+/* Site Footer - End
+================================================== */

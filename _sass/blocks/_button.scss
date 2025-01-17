@@ -1,0 +1,89 @@
+/* Button - Start
+================================================== */
+
+// Buttons Group - Start
+.btns_group {
+	gap: 24px;
+	display: flex;
+	padding: 50px 0;
+	align-items: center;
+	justify-content: flex-start;
+}
+// Buttons Group - End
+
+// Button Fill - Start
+.btn {
+	gap: 8px;
+	z-index: 1;
+	font-size: 16px;
+	font-weight: 500;
+	overflow: hidden;
+	line-height: 19px;
+	position: relative;
+	border-radius: 50px;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	padding: 20px 40px 19px;
+	transition: var(--bs-transition);
+	&:hover {
+		transform: translateY(-2px);
+	}
+}
+
+.btn.btn-primary {
+	border-color: var(--bs-primary);
+	background-color: var(--bs-primary);
+	&:hover {
+		box-shadow: 0 10px 30px 0 rgba(var(--bs-primary-rgb), 0.50);
+	}
+}
+
+.btn.btn-outline-light {
+	&:hover {
+		box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.30);
+	}
+}
+// Button Fill - End
+
+// Button UnFill - Start
+.btn-link {
+	gap: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	box-shadow: none;
+	line-height: 18px;
+	align-items: center;
+	display: inline-flex;
+	text-decoration: none;
+	color: var(--bs-heading-color);
+	transition: var(--bs-transition);
+	.btn_icon {
+		width: 32px;
+		height: 32px;
+		flex: 0 0 auto;
+		font-size: 15px;
+		align-items: center;
+		border-radius: 100%;
+		display: inline-flex;
+		color: var(--bs-dark);
+		justify-content: center;
+		transition: var(--bs-transition);
+		background-color: var(--bs-white);
+	}
+	.btn_label {
+		text-decoration: underline;
+	}
+	&:hover {
+		color: var(--bs-primary);
+		.btn_icon {
+			fill: var(--bs-white);
+			transform: translate(2px, -2px);
+			background-color: var(--bs-primary);
+		}
+	}
+}
+// Button UnFill - End
+
+/* Button - End
+================================================== */

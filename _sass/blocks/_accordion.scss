@@ -1,0 +1,96 @@
+/* Accordion - Start
+================================================== */
+.accordion {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	.accordion-item {
+		padding: 60px 0;
+		border-radius: 0;
+		border-style: solid;
+		border-width: 0 0 1px;
+		background-color: transparent;
+		border-color: rgba(var(--bs-border-color), 1);
+	}
+	.accordion-header {
+		gap: 20px;
+		padding: 0;
+		width: 100%;
+		display: flex;
+		line-height: 1;
+		font-size: 80px;
+		box-shadow: none;
+		position: relative;
+		align-items: flex-start;
+		border-radius: 0 !important;
+		color: var(--bs-heading-color);
+		justify-content: space-between;
+		font-family: var(--bs-heading-font-family);
+		&:before {
+			order: 1;
+			width: 60px;
+			height: 60px;
+			content: '\2b';
+			flex: 0 0 auto;
+			font-size: 24px;
+			margin: 10px 0 0;
+			font-weight: 700;
+			text-align: center;
+			border-radius: 100%;
+			align-items: center;
+			display: inline-flex;
+			color: var(--bs-white);
+			justify-content: center;
+			background: var(--bs-dark);
+			transition: var(--bs-transition);
+			font-family: 'Font Awesome 5 Pro';
+			border: 1px solid rgba(var(--bs-border-color), 0.2);
+		}
+
+		&:hover {
+			&:before {
+				color: var(--bs-white);
+				border-color: var(--bs-primary);
+				background-color: var(--bs-primary);
+			}
+		}
+		
+	}
+	.accordion-body {
+		padding: 40px 0 0;
+		p {
+			font-size: 20px;
+		}
+		strong {
+			font-weight: 900;
+		}
+	}
+
+	.accordion-item:has([aria-expanded=true]) {
+		.accordion-header {
+			&:before {
+				transform: unset;
+				content: '\f068';
+				border-color: var(--bs-primary);
+				background-color: var(--bs-primary);
+			}
+		}
+	}
+}
+
+.boxed_wrapper:has(.accordion) {
+	padding-top: 30px;
+}
+
+.bg-white {
+	.accordion {
+		.accordion-header {
+			&:before {
+				background: var(--bs-dark);
+				border-color: var(--bs-dark);
+			}
+		}
+	}
+}
+/* Accordion - End
+================================================== */

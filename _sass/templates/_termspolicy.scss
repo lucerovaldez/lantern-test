@@ -1,0 +1,50 @@
+/* Terms of Service, Privacy Policy  - Start
+================================================== */
+.terms_policy_nav {
+	gap: 10px;
+	a {
+		display: flex;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 19px;
+		align-items: center;
+		border-radius: 50px;
+		padding: 21px 30px 20px;
+	}
+	>li {
+		&:hover:not(.active) {
+			>a {
+				background-color: rgba(var(--bs-light-rgb), 0.06);
+			}
+		}
+		&.active {
+			>a {
+				color: var(--bs-dark);
+				border-color: var(--bs-white);
+				background-color: var(--bs-white);
+			}
+		}
+	}
+}
+
+.terms_policy_description {
+	h2 {
+		font-size: 48px;
+		margin-bottom: 35px;
+		mark {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 14px;
+		}
+	}
+	h3 {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 19px;
+		margin-bottom: 52px;
+	}
+}
+/* Terms of Service, Privacy Policy  - End
+================================================== */

@@ -1,0 +1,36 @@
+/* Contact Page - Start
+================================================== */
+.contact_section {
+	padding-bottom: 200px;
+	.heading_block .heading_title {
+		font-size: 60px;
+		line-height: 1.1;
+	}
+	.heading_block .heading_description {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.iconlist_block {
+		>li {
+			gap: 20px;
+		}
+		.iconlist_icon {
+			width: 60px;
+			height: 60px;
+			font-size: 24px;
+			align-items: center;
+			border-radius: 100%;
+			display: inline-flex;
+			justify-content: center;
+			color: var(--bs-heading-color);
+			border: 1px solid rgba(var(--bs-border-color), 0.1);
+		}
+	}
+
+	.brand_logo {
+		max-width: 230px;
+		margin-top: 80px;
+	}
+}
+/* Contact Page - End
+================================================== */

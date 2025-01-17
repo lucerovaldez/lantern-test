@@ -1,0 +1,57 @@
+:root {
+	--bs-body-font-family: "Roboto", sans-serif;
+	--bs-heading-font-family: "DM Sans", sans-serif;
+	--bs-body-font-size: 16px;
+	--bs-body-font-weight: 400;
+	--bs-body-line-height: 1.6;
+	--bs-transition: 300ms ease;
+}
+
+// Default and Dark Template
+:root,
+[data-bs-theme=dark] {
+	--bs-body-bg: #000000;
+	--bs-body-bg-rgb: 0, 0, 0;
+
+	--bs-body-color: var(--bs-white);
+	--bs-body-color-rgb: 255, 255, 255;
+
+	--bs-heading-color: var(--bs-white);
+
+	--bs-primary: #843EFE;
+	--bs-primary-rgb: 132, 62, 254;
+	--bs-warning: #FFC000;
+	--bs-warning-rgb: 255, 192, 0;
+	--bs-dark: #000000;
+	--bs-dark-rgb: 0, 0, 0;
+	--bs-light: #FFFFFF;
+	--bs-light-rgb: 255, 255, 255;
+
+	--bs-border-color: 255, 255, 255;
+	--bs-border-radius: 24px;
+}
+
+
+// Light Template
+/*
+[data-bs-theme=light] {
+	[class*="dark_template_"] {
+		display: none;
+	}
+	.btn {
+		background: linear-gradient(180deg, #FFC000 0%, #FFAB00 100%);
+	}
+}
+*/
+
+// Color Settings
+.bg-white {
+	--bs-body-color: #4d4e50;
+	--bs-body-color-rgb: 77, 78, 80;
+	--bs-heading-color: var(--bs-dark);
+	--bs-border-color: 219, 221, 225;
+	hr {
+		background-color: rgba(var(--bs-border-color), 1);
+	}
+	color: var(--bs-body-color);
+}

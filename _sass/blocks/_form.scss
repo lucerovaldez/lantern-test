@@ -1,0 +1,118 @@
+/* Form - Start
+================================================== */
+// Input 
+.form-group {
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	.form-control,
+	.form-select {
+		padding: 0;
+		border-radius: 0;
+		box-shadow: none;
+		position: relative;
+		border-style: solid;
+		transition: 0.3s ease;
+		border-width: 0 0 1px;
+		background-color: transparent;
+		color: var(--bs-heading-color);
+		caret-color: var(--bs-heading-color);
+		border-color: rgba(var(--bs-border-color), 0.1);
+		&:focus {
+			border-color: rgba(var(--bs-border-color), 1);
+		}
+
+		&::placeholder {
+			font-size: 18px;
+			color: rgba(200, 200, 205, 0.9);
+		}
+		&:-ms-input-placeholder {
+			font-size: 18px;
+			color: rgba(200, 200, 205, 0.9);
+		}
+		&::-ms-input-placeholder {
+			font-size: 18px;
+			color: rgba(200, 200, 205, 0.9);
+		}
+	}
+
+	input.form-control {
+		height: 60px;
+	}
+	textarea.form-control {
+		min-height: 120px;
+		padding: 16px 0 0;
+		margin-bottom: 34px;
+	}
+}
+
+// Search Form
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}
+
+// Contact Form - Start
+.contact_form {
+	textarea.form-control {
+		margin: 0 0 50px;
+	}
+
+	.title_text {
+		font-size: 26px;
+		font-weight: 500;
+		margin-bottom: 33px;
+	}
+
+	.btn {
+		width: 100%;
+	}
+}
+
+.checkbox_group {
+	gap: 14px;
+	.form-check {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		input {
+			top: 0;
+			left: 0;
+			margin: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			position: absolute;
+			border-radius: 50px;
+			background: transparent;
+			transition: var(--bs-transition);
+			border: 1px solid rgba(var(--bs-border-color), 0.1);
+			&:focus {
+				box-shadow: none;
+			}
+			&:hover:not(:checked) {
+				
+				border-color: var(--bs-primary);
+			}
+			&:checked {
+				background: var(--bs-primary);
+				border-color: var(--bs-primary);
+			}
+		}
+		label {
+			cursor: pointer;
+			font-size: 15px;
+			font-weight: 500;
+			padding: 10px 26px;
+		}
+	}
+}
+// Contact Form - End
+
+/* Form - End
+================================================== */

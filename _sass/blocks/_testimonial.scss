@@ -1,0 +1,24 @@
+/* Testimonial Block - Start
+================================================== */
+.testimonial_block {
+	padding: 40px;
+	backdrop-filter: blur(16px);
+	transition: var(--bs-transition);
+	border-radius: var(--bs-border-radius);
+	background-color: rgba(var(--bs-border-color), 0.1);
+	border: 1px solid rgba(var(--bs-border-color), 0.1);
+	&:hover {
+		border-color: rgba(var(--bs-border-color), 0.3);
+	}
+	.testimonial_comment {
+		font-size: 18px;
+		line-height: 26px;
+		font-style: italic;
+		margin: 34px 0 20px;
+	}
+	.testimonial_title {
+		font-size: 18px;
+	}
+}
+/* Testimonial Block - End
+================================================== */

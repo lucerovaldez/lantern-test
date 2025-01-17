@@ -1,0 +1,50 @@
+/* Table Of Content - start
+================================================== */
+/* 
+* Project Name   :  Black Lantern - Cybersecurity Services Company.
+* File           :  CSS Base
+* Version        :  1.0.0
+* Developer		 :	devshagor (https://www.fiverr.com/developershagor/)
+*/
+/* Table Of Content - end
+================================================== */
+
+// Template Global Settings
+@import 'variable';
+@import 'fonts';
+@import 'reset';
+
+// Template Blocks
+@import 'blocks/animation';
+@import 'blocks/backtotop';
+@import 'blocks/space';
+@import 'blocks/list';
+@import 'blocks/button';
+@import 'blocks/form';
+@import 'blocks/typography';
+@import 'blocks/carousel';
+@import 'blocks/rating';
+@import 'blocks/accordion';
+@import 'blocks/funfact';
+@import 'blocks/process';
+@import 'blocks/testimonial';
+@import 'blocks/social';
+@import 'blocks/product';
+@import 'blocks/table';
+
+// Template Parts
+@import 'template-parts/header';
+@import 'template-parts/footer';
+@import 'template-parts/pageheader';
+
+// Template Patterns
+@import 'patterns/hero';
+@import 'patterns/calltoaction';
+
+// Template Pages
+@import 'templates/career';
+@import 'templates/contact';
+@import 'templates/termspolicy';
+
+// Template Responsive For Small Devices
+@import 'responsive';

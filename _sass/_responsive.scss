@@ -1,0 +1,415 @@
+/* 
+Responsive For Mobile & Tablet Devices
+================================================== 
+* Project Name   :  Black Lantern - Cybersecurity Services Company.
+* File           :  CSS Base
+* Version        :  1.0.0
+* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
+*	CSS code for responsive layout To make responsive
+================================================== 
+*/
+
+/* Media Screen 1440px - Start
+================================================== */
+@media screen and (max-width: 1440px) {
+	:root {
+		--bs-body-font-size: 16px;
+		--bs-body-line-height: 1.6;
+	}
+
+	.hero_title {
+		font-size: 80px;
+	}
+	.hero_section .hero_description {
+		font-size: 20px;
+		max-width: 700px;
+	}
+	.hero_section {
+		.btns_group {
+			padding: 35px 0;
+		}
+	}
+
+	.btn {
+		padding: 15px 34px 14px;
+	}
+
+	.heading_block .heading_title {
+		font-size: 54px;
+		margin-bottom: 8px;
+	}
+	.heading_block .heading_description {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.heading_block .heading_title small {
+		font-size: 34px;
+	}
+	.heading_block .heading_description small {
+		font-size: inherit;
+	}
+	.funfact_block p {
+		font-size: inherit;
+	}
+	.funfact_block .funfact_title {
+		font-size: 22px;
+		margin: 18px 0 8px;
+	}
+	.funfact_block .counter_value {
+		font-size: 48px;
+	}
+	.boxed_wrapper {
+		padding: 80px;
+	}
+	.site_footer .iconlist_block.unordered_list {
+		gap: 10px 30px;
+	}
+	.iconlist_block .iconlist_icon {
+		font-size: 18px;
+	}
+	.iconlist_block > li {
+		gap: 8px;
+		line-height: 22px;
+	}
+
+	.contact_section .heading_block .heading_title {
+		font-size: 42px;
+	}
+	.contact_section .heading_block .heading_description {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.career_accordion .accordion-header:before {
+		width: 50px;
+		height: 50px;
+	}
+	.career_accordion .accordion-header {
+		gap: 16px;
+		font-size: 48px;
+	}
+	.accordion .accordion-header {
+		gap: 16px;
+		font-size: 54px;
+	}
+	.accordion .accordion-header:before {
+		margin: 0;
+		width: 50px;
+		height: 50px;
+		font-size: 20px;
+	}
+	.accordion .accordion-body p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+/* Media Screen 1440px - End
+================================================== */
+
+/* Media Screen 1199px - Start
+================================================== */
+@media screen and (max-width: 1199px) {
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+/* Media Screen 1199px - End
+================================================== */
+
+/* Media Screen 1024px - Start
+================================================== */
+@media screen and (max-width: 1024px) {
+	.boxed_wrapper {
+		padding: 50px 40px;
+	}
+	.site_footer .boxed_wrapper {
+		padding-top: 80px;
+	}
+	.site_footer .site_logo .site_link {
+		width: 190px;
+	}
+	.site_footer hr {
+		margin: 50px 0 40px;
+	}
+	.contact_section .brand_logo {
+		max-width: 200px;
+		margin-top: 60px;
+	}
+	.table_wrap {
+		overflow-x: scroll;
+		table {
+			width: 1200px;
+		}
+	}
+	.career_accordion .accordion-header {
+		gap: 14px;
+		font-size: 36px;
+	}
+	.career_accordion .accordion-header:before {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
+	.accordion .accordion-item {
+		padding: 40px 0;
+	}
+	.terms_policy_description h2 {
+		font-size: 42px;
+	}
+	.terms_policy_description p {
+		font-size: 16px;
+	}
+	.terms_policy_description h3 {
+		font-size: 28px;
+	}
+	.hero_description {
+		font-size: 20px;
+	}
+	.shape_light_3 {
+		left: -58%;
+		bottom: -400px;
+	}
+}
+/* Media Screen 1024px - End
+================================================== */
+
+/* Media Screen 991px - Start
+================================================== */
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 730px;
+	}
+	.hero_section {
+		padding: 150px 0 120px;
+	}
+	.site_header .btns_group {
+		gap: 10px;
+	}
+	.process_section .boxed_wrapper .brand_logo {
+		max-width: 130px;
+	}
+	.cta_section .brand_logo {
+		max-width: 200px;
+	}
+	.site_footer .site_logo {
+		text-align: center;
+	}
+	.contact_section .brand_logo {
+		max-width: 180px;
+		margin: 50px 0 80px;
+	}
+	.page_header_section {
+		padding: 150px 0 100px;
+	}
+	.contact_section {
+		padding-bottom: 140px;
+	}
+	.shape_light_1 {
+		bottom: -66px;
+	}
+	.shape_light_2 {
+		top: -33%;
+		left: -55%;
+	}
+	.shape_light_3 {
+		display: none;
+	}
+}
+/* Media Screen 991px - End
+================================================== */
+
+/* Media Screen 767px - Start
+================================================== */
+@media screen and (max-width: 767px) {
+	.accordion .accordion-header {
+		gap: 12px;
+		font-size: 42px;
+	}
+	.accordion .accordion-body p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.accordion .accordion-body {
+		padding: 20px 0 0;
+	}
+	.accordion .accordion-header:before {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
+	.hero_description {
+		font-size: 18px;
+	}
+	.shape_light_1,
+	.shape_light_2,
+	.shape_light_3 {
+		display: none;
+	}
+}
+/* Media Screen 767px - End
+================================================== */
+
+/* Media Screen 575px - Start
+================================================== */
+@media screen and (max-width: 575px) {
+	.hero_title {
+		font-size: 60px;
+	}
+	.hero_section .hero_description {
+		font-size: 16px;
+	}
+	.heading_block .heading_description {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.heading_block .heading_title small {
+		font-size: 26px;
+	}
+	.hero_section {
+		padding: 160px 0 100px;
+	}
+	.section_space_md {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.section_space {
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
+	.process_block {
+		border: none;
+		padding-left: 0;
+	}
+	.process_block > li:before {
+		display: none;
+	}
+	.heading_block .heading_title {
+		font-size: 42px;
+		margin-bottom: 8px;
+	}
+	.heading_block {
+		margin-bottom: 40px;
+	}
+	.btns_group {
+		gap: 16px;
+		padding: 40px 0;
+	}
+	.cta_section .brand_logo {
+		max-width: 160px;
+	}
+	.funfact_block {
+		padding: 30px;
+	}
+	.funfact_block .funfact_icon {
+		margin-bottom: 20px;
+	}
+	.contact_section .heading_block .heading_title {
+		font-size: 36px;
+	}
+	.contact_section .iconlist_block .iconlist_icon {
+		width: 50px;
+		height: 50px;
+		font-size: 20px;
+	}
+	.contact_section .iconlist_block > li {
+		gap: 10px;
+	}
+	.terms_policy_description h2 {
+		font-size: 36px;
+	}
+	.hero_description {
+		font-size: 16px;
+	}
+	.accordion .accordion-header {
+		gap: 10px;
+		font-size: 36px;
+	}
+	.accordion .accordion-body p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 484px) {
+	.site_header.sticky .announcement_topbar {
+		margin-top: -76px;
+	}
+}
+/* Media Screen 575px - End
+================================================== */
+
+/* Media Screen 425px - Start
+================================================== */
+@media screen and (max-width: 425px) {
+	.process_block .collapse_head .badge {
+		gap: 20px;
+		font-size: 18px;
+		padding: 12px 20px 10px;
+	}
+	.process_block .heading_title {
+		font-size: 22px;
+	}
+	.heading_block .heading_title {
+		font-size: 36px;
+	}
+	.career_accordion .accordion-header {
+		gap: 10px;
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.career_accordion .accordion-header:before {
+		width: 34px;
+		height: 34px;
+		font-size: 14px;
+	}
+	.product_block {
+		padding: 30px;
+	}
+	.product_block p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.product_block .product_title {
+		font-size: 30px;
+	}
+	.product_block .product_subtitle {
+		margin: 4px 0 0;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.accordion .accordion-header {
+		font-size: 30px;
+	}
+	.boxed_wrapper {
+		padding: 40px 30px;
+	}
+}
+/* Media Screen 425px - End
+================================================== */
+
+/* Media Screen 375px - Start
+================================================== */
+@media screen and (max-width: 375px) {
+	.hero_title {
+		font-size: 54px;
+	}
+	.contact_section .heading_block .heading_title {
+		font-size: 30px;
+	}
+	.accordion .accordion-header {
+		font-size: 24px;
+	}
+	.accordion .accordion-header:before {
+		width: 36px;
+		height: 36px;
+		font-size: 16px;
+	}
+}
+/* Media Screen 375px - End
+================================================== */
+
+/* Media Screen 320px - Start
+================================================== */
+@media screen and (max-width: 320px) {}
+/* Media Screen 320px - End
+================================================== */

@@ -1,0 +1,25 @@
+/* Typography - Start
+================================================== */
+.heading_block {
+	margin-bottom: 60px;
+	.heading_title {
+		font-size: 80px;
+		line-height: 1.18;
+		margin-bottom: 10px;
+		small {
+			display: block;
+			font-size: 40px;
+		}
+	}
+	.heading_description {
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 40px;
+		small {
+			display: block;
+			font-size: 18px;
+		}
+	}
+}
+/* Typography - End
+================================================== */
