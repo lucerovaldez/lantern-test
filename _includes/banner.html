@@ -1,0 +1,38 @@
+<!-- Page Header Section - Start
+================================================== -->
+<section class="page_header_section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11">
+        <h1 class="hero_title split-text right">
+          {{ page.title }}
+        </h1>
+        {% if page.banner_extra == true %}
+        <p class="hero_description mb-0" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+          {{ page.description }}
+        </p>
+        <ul class="btns_group pb-0 unordered_list" data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+          <li>
+            <a class="btn btn-outline-light" href="{{ page.cta_btn1_url }}">
+              <span class="btn_label">Learn More</span>
+              <span class="btn_icon">
+                <i class="fa-solid fa-arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-primary" href="{{ page.cta_btn2_url }}">
+              <span class="btn_label">Contact Us</span>
+              <span class="btn_icon">
+                <i class="fa-solid fa-arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page Header Section - End
+================================================== -->

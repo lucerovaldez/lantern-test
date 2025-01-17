@@ -1,0 +1,63 @@
+baseurl: ''
+permalink: /:title/
+title: 'Lantern'
+
+google_analytics_id: ""
+
+#https://formspree.io/f/xanydger
+contact_form: "xanydger"
+
+homepage:
+  show_call_box: true
+
+logo:
+  main: "assets/images/black_lantern_logo_light.svg"
+  light: "assets/images/site_logo_black.svg"
+
+footer:
+  copyright_text: "Black Lantern Security. All rights reserved."
+
+seo:
+  meta_og_title: "Lantern - Cybersecurity Services Company"
+  meta_og_type: "website"
+  meta_og_url: "https://themeplugs.com"
+  meta_og_image: "g"
+  meta_og_description: "Lantern - Cybersecurity Services Company by Jekyll"
+  meta_twitter_card: "summary"
+  meta_twitter_site: "@lantern"
+  meta_twitter_creator: "@lantern"
+
+collections:
+  category:
+    output: true
+
+sass:
+  indentWidth: 4
+  style: compact # possible values: nested expanded compact compressed
+  precision: 10
+  sass_dir: _sass
+
+plugins:
+  - jekyll-environment-variables
+
+gems: ['kramdown']
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
+  - vendor
+  - Procfile
+  - Rakefile
+
+# for github pages setup uncomment the code and set to your domain
+# domain: yourdomain.com      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+# url: https://yourdomain.com  # the base hostname and protocol for your site, e.g. http://example.com
+# baseurl:       # place folder name if the site is served in a subfolder   

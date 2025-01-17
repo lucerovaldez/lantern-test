@@ -1,0 +1,63 @@
+<!-- Service Section - Start
+================================================== -->
+<div class="shape_light_2">
+    <img src="assets/images/shape_light_2.webp" alt="Shape Light">
+</div>
+
+ <!-- About Section - Start
+================================================== -->
+<section class="about_section section_space pb-0">
+    <div class="container">
+        <div class="heading_block mb-0">
+        <div class="row justify-content-lg-between">
+            <div class="col-lg-7">
+            <h2 class="heading_title mb-0 split-text right">
+                <small>
+                Black Lantern Security provides a complete suite of Offensive and Defensive Cybersecurity Services.
+                </small>
+            </h2>
+            </div>
+            <div class="col-lg-5">
+            <p class="heading_description mb-0">
+                <small>
+                We foster an environment that demands exceptional integrity and challenges industry dogma. We deliver solutions that provide lasting value and will adapt and evolve with changing threats.
+                </small>
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- About Section - End
+================================================== -->
+    
+<div class="service_section section_space">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="accordion" id="service_accordion">
+                    {% for service in site.data.service.services %}
+                    
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="900">
+                        <div class="accordion-header" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{ forloop.index }}"
+                            aria-expanded="{% if service.show == true%}true{% endif %}" aria-controls="collapse_{{ forloop.index }}">
+                            {{ service.title }}
+                        </div>
+                        <div id="collapse_{{ forloop.index }}" class="accordion-collapse collapse {% if service.show == true%}show{% endif %}" data-bs-parent="#service_accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">
+                                    {{ service.desc }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Service Section - End
+================================================== -->

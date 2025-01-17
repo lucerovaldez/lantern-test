@@ -1,0 +1,11 @@
+{% for item in site.data.social %}
+  <li>
+    <a href="{{ item.link }}" data-cursor='-opaque'>
+      {% if item.png == true %} 
+      <img src="https://devartogroup.github.io/lantern/assets/images/{{ item.icon }}" width="20">
+      {% else %}
+      <i class="{{ item.icon }}"></i>
+      {% endif %} 
+    </a>
+</li>
+{% endfor %}

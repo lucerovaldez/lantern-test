@@ -1,0 +1,70 @@
+<style>
+    @media screen and (min-width: 1370px){
+        .odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+        min-width: 35px;
+        }
+    }
+    .odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+        min-width: 30px;
+    }
+</style>
+<!-- About Section - Start
+================================================== -->
+<section class="about_section section_decoration">
+    <div class="container">
+        <div class="heading_block mb-0">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-6">
+                    <h2 class="heading_title mb-0 split-text right">
+                        <small>
+                            Black Lantern Security provides a complete suite of Offensive and Defensive Cybersecurity
+                            Services.
+                        </small>
+                    </h2>
+                </div>
+                <div class="col-lg-5">
+                    <p class="heading_description mb-0">
+                        <small>
+                            We foster an environment that demands exceptional integrity and challenges industry dogma.
+                            We deliver solutions that provide lasting value and will adapt and evolve with changing
+                            threats.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section - End
+================================================== -->
+
+<!-- Funfact Section - Start
+================================================== -->
+<section class="funfact_section section_space_md pb-0 section_decoration">
+    <div class="container">
+        <div class="row">
+            {% for item in site.data.funfact %}
+            <div class="col-lg-4">
+                <div class="funfact_block">
+                    <div class="funfact_icon">
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                    </div>
+                    <div class="funfact_info">
+                        <div class="counter_value">
+                            <span class="odometer" data-count=" {{ item.count }}">0</span>
+                        </div>
+                        <h3 class="funfact_title split-text right">
+                            {{ item.title }}
+                        </h3>
+                        <p class="mb-0">
+                            {{ item.desc }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- Funfact Section - End
+================================================== -->

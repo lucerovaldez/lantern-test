@@ -1,0 +1,27 @@
+process1:
+  - title: Quantify
+    sub_title: ""
+    list_items: 
+      - item: "What were the <a href='#'>FINANCIAL IMPACTS</a> of the attacks?"
+      - item: "Was critical data exfiltrated?"
+      - item: "Were critical applications taken offline? If so, for how long?"
+      - item: "What is the <a href='#'>ACTUAL COST</a> of a security incident or breach? "
+  - title: Verify
+    sub_title: ""
+    list_items:
+      - item: "Were host-, network-, application-, and email-based defenses adequate and effective?"
+      - item: "Which attacks were detected, prevented, or altogether missed?"
+      - item: "By emulating multiple classes of attacker, <a href='#'>BLS VERIFIES</a> and <a href='#'>VALIDATES</a> existing controls."
+  - title: Identify
+    sub_title: ""
+    list_items:
+      - item: "Are there <a href='#'>STRATEGIC</a> or <a href='#'>TACTICAL</a> gaps in the organization's defenses?"
+      - item: "Can the defensive posture be improved with minor configuration changes and targeted tuning or is there a larger problem?"
+      - item: "BLS will work with the organization to develop and define remediations commensurate with <a href='#'>RISK</a> and <a href='#'>COST</a>."
+  - title: Remediate
+    sub_title: ""
+    list_items:
+      - item: "<a href='#'>BLS</a> will provide actionable findings with detailed remediation guidance. This could include anything from a small change to a configuration file to a significant change in the network architecture. "
+      - item: "<a href='#'>BLS</a> is dedicated to helping you implement fixes, <a href='#'>REDUCE</a> risk, and <a href='#'>DRIVE DOWN</a> the <a href='#'>COST</a> of a security incident or breach."
+
+  

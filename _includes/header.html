@@ -1,0 +1,95 @@
+<!-- Site Header - Start
+================================================== -->
+<header class="site_header">
+   <!-- {% include deals.html %} -->
+   <div class="nav_wrapper">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-3 col-5">
+               <div class="site_logo">
+                  <a class="site_link" href="{{site.baseurl}}/">
+                     <img loading="lazy" src="{{ site.logo.main | relative_url }}" alt="{{ site.title }}" />
+                  </a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-2">
+               <nav class="main_menu navbar navbar-expand-lg">
+                  <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
+                     {% if site.data.menus.primary[0] %}
+               {% for item in site.data.menus.primary %}
+                  {% if item.subfolderitems[0] %}
+                  <ul class="main_menu_list unordered_list justify-content-center">
+                     {% for entry in item.subfolderitems %}
+                        {% if entry.subsubfolderitems[0] %}
+                        <li class="{% if entry.subsubfolderitems[0] %}dropdown{% endif %}">
+                           
+                           <a class="nav-link" href="{{ entry.url }}" id="research_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="nav_link_label" data-text="{{ entry.name }}">{{ entry.name }}</span>
+                              <span class="nav_link_icon"><i class="fa-solid fa-chevron-down"></i></span>
+                           </a>
+
+                           {% if entry.subsubfolderitems[0] %}
+                           <ul class="dropdown-menu" aria-labelledby="research_submenu">
+                              {% for subentry in entry.subsubfolderitems %}
+                                 {% if subentry.entry.subsubfolderitems[0] %}
+                                    <li class="dropdown-item">
+                                       <a class="dropdown-item" href="{{ subentry.url }}">
+                                          <span class="nav_link_label">{{ subentry.name }}</span>
+                                        </a>
+                                    </li>
+                                 {% else %}
+                                    <li>
+                                       <a class="dropdown-item" href="{{ subentry.url }}">
+                                          <span class="nav_link_label">{{ subentry.name }}</span>
+                                       </a>
+                                    </li>
+                                 {% endif %}
+                               {% endfor %}
+                           </ul>
+                           {% endif %}
+                        </li>
+                        {% else %}
+                        <li>
+				{% if entry.externalurl == "true" %}
+                           <a class="nav-link" href="{{ entry.url }}" target="_blank">
+                              <span class="nav_link_label" data-text="{{ entry.name }}">{{ entry.name }}</span>
+                            </a>
+				{% else %}
+				<a class="nav-link" href="{{site.baseurl}}{{ entry.url }}" {% if entry.externalurl == "true" %} target="_blank"{% endif %}>
+                              <span class="nav_link_label" data-text="{{ entry.name }}">{{ entry.name }}</span>
+                            </a>
+				{% endif %}
+			</li>
+                        {% endif %}               
+                     {% endfor %}
+                  </ul>
+                  {% endif %}
+               {% endfor %}
+            {% endif %}   
+                  </div>
+               </nav>
+            </div>
+            <div class="col-lg-3 col-5">
+               <ul class="btns_group unordered_list p-0 justify-content-end">
+                  <li>
+                     <button class="mobile_menu_btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="far fa-bars"></i>
+                     </button>
+                  </li>
+                  <li>
+                     <a class="btn btn-primary" href="{{site.baseurl}}/contact/">
+                        <span class="btn_label">Contact Us</span>
+                        <span class="btn_icon">
+                           <i class="fa-solid fa-arrow-up-right"></i>
+                        </span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<!-- Site Header - End
+   ================================================== -->

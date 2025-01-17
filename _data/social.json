@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Facebook",
+    "link": "https://facebook.com/BLSRI",
+    "icon": "fab fa-facebook-f",
+    "png": false
+  },
+  {
+    "name": "Github",
+    "link": "https://github.com/blacklanternsecurity",
+    "icon": "fab fa-github",
+    "png": false
+  },
+  {
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/company/black-lantern-security/",
+    "icon": "fab fa-linkedin",
+    "png": false
+  },
+  {
+    "name": "Discord",
+    "link": "https://discord.gg/PZqkgxu5SA",
+    "icon": "discord.png",
+    "png": true
+  },
+  {
+    "name": "X",
+    "link": "https://x.com/blacklanternllc ",
+    "icon": "x.png",
+    "png": true
+  }
+]

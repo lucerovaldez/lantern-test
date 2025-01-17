@@ -1,0 +1,39 @@
+primary:
+  - title: Main Menu
+    subfolderitems:
+      - name: "Services"
+        url: "/services/"
+        weight: 2
+        externalurl: "false"
+      - name: "Products"
+        url: "/products/"
+        weight: 2
+        externalurl: "false"
+      - name: "Research"
+        url: "https://blog.blacklanternsecurity.com/"
+        weight: 2
+        externalurl: "true"
+      - name: "Advisories"
+        url: "/advisories/"
+        weight: 2
+        externalurl: "false"
+      - name: "Careers"
+        url: "/careers/"
+        weight: 2
+        externalurl: "false"
+
+        
+
+footer_menu_one_title: Usefull Link
+footer_menu:
+  - title: "Services"
+    url: "/services/"
+
+  - title: "Products"
+    url: "/products/"
+
+  - title: "Careers"
+    url: "/careers/"
+
+  - title: "Advisories"
+    url: "/advisories/"

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Assessment Completed",
+    "image": "assets/images/icon_horizontal_bar.svg",
+    "count": 403,
+    "desc": ""
+  },
+  {
+    "title": "Published CVEs",
+    "image": "assets/images/icon_vertical_line.svg",
+    "count": 16,
+    "desc": ""
+  },
+  {
+    "title": "Assets Defended",
+    "image": "assets/images/icon_chart.svg",
+    "count": 51963,
+    "desc": ""
+  }
+]

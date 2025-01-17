@@ -1,0 +1,55 @@
+<!-- Products Section - Start
+================================================== -->
+<div class="shape_light_4">
+    <img src="../assets/images/shape_light_2.webp" alt="Shape Light">
+</div>
+
+{% if site.data.products %}
+<section class="products_section section_space pb-0">
+    <div class="container">
+        <div class="row">
+            {% for product in site.data.products %}
+            <div class="col-lg-4">
+                <div class="product_block">
+                    <div class="product_icon">
+                        <img src="{{ product.image }}" alt="{{ product.title }}">
+                    </div>
+                    <h2 class="product_title">{{ product.title }}</h2>
+                    <h3 class="product_subtitle">{{ product.sub_title }}</h3>
+                    <p>
+                        {{ product.desc }}
+                    </p>
+                    <ul class="iconlist_block unordered_list_block">
+                        {% if product.source!='' %}
+                        <li>
+                            <span class="iconlist_icon">
+                                <i class="fa-solid fa-shield-keyhole"></i>
+                            </span>
+                            <span class="iconlist_label">
+                                {{ product.source }}
+                            </span>
+                        </li>
+                        {% endif %}
+                        {% if product.grade!='' %}
+                        <li>
+                            <span class="iconlist_icon">
+                                <i class="fa-solid fa-building"></i>
+                            </span>
+                            <span class="iconlist_label">
+                                {{ product.grade }}
+                            </span>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    <a class="btn" href="{{ product.btn_link }}" {% if product.btn_link_external == 'true' %} target="_blank"{% endif %}>
+                        <span class="btn_label"> {{ product.btn_text }}</span>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+<!-- Products Section - End
+================================================== -->

@@ -1,0 +1,59 @@
+
+
+<!-- Process Section - Start
+================================================== -->
+<section class="process_section section_space">
+    <div class="container-fluid">
+        <div class="boxed_wrapper bg-white rounded">
+            <div class="heading_block">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-last text-lg-end">
+                        <div class="brand_logo d-inline-block">
+                            <img data-aos="zoom-in" src="assets/images/favicon.webp" alt="Favicon">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="heading_title mb-0 split-text right">
+                            Our <br> Process
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <ul class="process_block unordered_list_block">
+                {% for process in site.data.process.process1 %}
+                
+                <li data-aos="fade-left" data-aos-duration="900">
+                    <div class="collapse_head">
+                        <div class="badge" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_define{{ forloop.index }}"
+                            aria-expanded="false" aria-controls="collapse_define{{ forloop.index }}">
+                            {{ forloop.index }}. {{ process.title }}
+                        </div>
+                        <h3 class="heading_title" data-bs-toggle="collapse" data-bs-target="#collapse_define{{ forloop.index }}"
+                            aria-expanded="false" aria-controls="collapse_define{{ forloop.index }}">
+                            {{ process.sub_title }}
+                        </h3>
+                    </div>
+                    <div class="collapse" id="collapse_define{{ forloop.index }}">
+                        <div class="card card-body">
+                            {% for list_item in process.list_items %}
+                            <ul class="iconlist_block unordered_list_block">
+                                <li>
+                                    <span class="iconlist_icon">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                    <span class="iconlist_label">
+                                        {{ list_item.item | markdownify }}
+                                    </span>
+                                </li>
+                            </ul>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Process Section - End
+================================================== -->
