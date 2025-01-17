@@ -1,4 +1,22 @@
 process1:
+- title: Define
+    sub_title: ""
+    list_items: 
+      - item: "What is the <a href='#'>LIFEBLOOD</a> of the business?"
+      - item: "Where are the <a href='#'>CROWN JEWELS?</a>"
+      - item: "Which workflows are the primary drivers for <a href='#'>PROFIT</a>, <a href='#'>REVENUE</a>, and <a href='#'>CASHFLOW?</a>"
+      - item: "Where is the critical <a href='#'>DATA?</a> <a href='#'>BLS</a> is dedicated to understanding the <a href='#'>ENTIRE</a> organization."
+  - title: Assess
+    sub_title: ""
+    list_items: 
+      - item: "Which Information Technology (IT) assets support critical business workflows?"
+      - item: "Are they <a href='#'>VULNERABLE?</a>"
+      - item: "How are they <a href='#'>DEFENDED?</a>  <a href='#'>BLS</a> will work to profile and assess critical business applications and services."
+  - title: Attack
+    sub_title: ""
+    list_items: 
+      - item: "Can critical assets <a href='#'>WITHSTAND</a> an attack?"
+      - item: "<a href='#'>BLS</a> works to emulate attacker tactics, techniques, and procedures (TTPs) that the organization is most likely to face based on current threat intelligence."
   - title: Quantify
     sub_title: ""
     list_items: 
